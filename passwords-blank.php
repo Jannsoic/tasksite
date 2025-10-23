@@ -1,5 +1,4 @@
 <?php
-// DB-Zugang für Render + InfinityFree
 $dbAddress = getenv('DB_HOST') ?: 'sql205.infinityfree.com';
 $dbUser    = getenv('DB_USER') ?: 'if0_40237314';
 $dbPass    = getenv('DB_PASS') ?: 'NdoTRmMaCCILxnL';
@@ -14,6 +13,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Optional: UTF-8 Zeichensatz setzen
+// Zeichensatz auf UTF-8 setzen
 $conn->set_charset("utf8");
 ?>
